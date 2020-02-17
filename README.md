@@ -8,15 +8,15 @@ http://wiki.ros.org/rqt/Tutorials/Writing%20a%20Python%20Plugin
 
 I follow the tutoral and I am able to get the package to build but when I try to run the code using:
 
-" rosrun rqt_mypkg rqt_mypkg "
+*rosrun rqt_mypkg rqt_mypkg*
 
 I get the error:
 
-'[rospack] Error: package 'rqt_mypkg' not found '
+[rospack] Error: package 'rqt_mypkg' not found
 
 I try:
 
-'rqt --force-discover'
+*rqt --force-discover*
 
 but I still get the same error.
 
