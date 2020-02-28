@@ -14,15 +14,13 @@ this:
 not:
 `rosrun rqt_mypkg rqt_mypkg`
 
-I get the error:
+NOW WORKING!
 
+~~I get the error:
 [rospack] Error: package 'rqt_mypkg' not found
-
 I try:
-
 `rqt --force-discover`
+but I still get the same error.~~
 
-but I still get the same error.
 
-
-I am using a machine running Ubuntu 16.04 and ROS Kinetic
+I am using a machine running Ubuntu 16.04 and ROS Kinetic 
