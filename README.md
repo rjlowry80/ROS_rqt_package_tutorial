@@ -8,6 +8,10 @@ http://wiki.ros.org/rqt/Tutorials/Writing%20a%20Python%20Plugin
 
 I follow the tutoral and I am able to get the package to build but when I try to run the code using:
 
+this:
+`rqt --standalone rqt_mypkg`
+
+not:
 `rosrun rqt_mypkg rqt_mypkg`
 
 I get the error:
