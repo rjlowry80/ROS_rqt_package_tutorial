@@ -6,6 +6,9 @@ http://wiki.ros.org/rqt/Tutorials/Create%20your%20new%20rqt%20plugin
 
 http://wiki.ros.org/rqt/Tutorials/Writing%20a%20Python%20Plugin
 
+For examples see:
+`https://github.com/ros-visualization/rqt_common_plugins/tree/groovy-devel`
+
 I follow the tutoral and I am able to get the package to build but when I try to run the code using:
 
 this:
@@ -15,6 +18,8 @@ not:
 `rosrun rqt_mypkg rqt_mypkg`
 
 NOW WORKING!
+
+
 
 ~~I get the error:
 [rospack] Error: package 'rqt_mypkg' not found
