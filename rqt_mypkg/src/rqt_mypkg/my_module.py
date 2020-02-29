@@ -28,7 +28,7 @@ class MyPlugin(Plugin):
         # Create QWidget
         self._widget = QWidget()
         # Get path to UI file which should be in the "resource" folder of this package
-        ui_file = os.path.join(rospkg.RosPack().get_path('rqt_mypkg'), 'resource', 'MyPlugin.ui')
+        ui_file = os.path.join(rospkg.RosPack().get_path('rqt_mypkg'), 'resource', 'droneUI2.ui')
         # Extend the widget with all attributes and children from UI file
         loadUi(ui_file, self._widget)
         # Give QObjects reasonable names
@@ -41,7 +41,13 @@ class MyPlugin(Plugin):
         if context.serial_number() > 1:
             self._widget.setWindowTitle(self._widget.windowTitle() + (' (%d)' % context.serial_number()))
         # Add widget to the user interface
+        self._widget.pushButton.pressed.connect(self.btnPressed)
+        
         context.add_widget(self._widget)
+
+
+    def btnPressed(self):
+        print 'button pressed.'
 
     def shutdown_plugin(self):
         # TODO unregister all publishers here
